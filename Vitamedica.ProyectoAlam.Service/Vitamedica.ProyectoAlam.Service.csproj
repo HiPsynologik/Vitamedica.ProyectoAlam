@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -136,12 +137,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Validators\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Vitamedica.ProyectoAlam.Shared\Vitamedica.ProyectoAlam.Shared.csproj">
-      <Project>{B8D782D4-67A1-449A-949E-29ADAEE81888}</Project>
-      <Name>Vitamedica.ProyectoAlam.Shared</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8D782D4-67A1-449A-949E-29ADAEE81888}</ProjectGuid>
+    <ProjectGuid>{0F0505AE-D929-43F5-882B-0AA7EAF8971F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vitamedica.ProyectoAlam.Shared</RootNamespace>
