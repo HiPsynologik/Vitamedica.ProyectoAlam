@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Shared", "1. Shared", "{E97D938E-231B-4433-88F0-3F532B6C7942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Model", "2. Model", "{968B754A-E8D3-44B4-AA2D-F387B614219E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Repository", "3. Repository", "{65AD2086-FC0B-4D42-9652-E42D3B5586A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain", "4. Domain", "{7C545E82-77CB-4E88-BB03-E3A37C4D2F7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Service", "5. Service", "{4531ED78-CE27-45AE-A543-A2FD91D42C22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. User Interface", "6. User Interface", "{094ECA03-DAE6-4A05-9AEC-690E0A72A794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Shared", "..\Vitamedica.ProyectoAlam.Shared\Vitamedica.ProyectoAlam.Shared.csproj", "{B8D782D4-67A1-449A-949E-29ADAEE81888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Service", "Vitamedica.ProyectoAlam.Service\Vitamedica.ProyectoAlam.Service.csproj", "{62AD0572-EC25-43B4-825D-CCD7622E8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Model", "Vitamedica.ProyectoAlam.Model\Vitamedica.ProyectoAlam.Model.csproj", "{30F8992B-F335-46B0-AE3D-E339A6204331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Model.Service", "Vitamedica.ProyectoAlam.Model.Service\Vitamedica.ProyectoAlam.Model.Service.csproj", "{5E15C5D8-67B0-4B84-995E-30635407D2CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Repository", "Vitamedica.ProyectoAlam.Repository\Vitamedica.ProyectoAlam.Repository.csproj", "{096201C4-2D8C-40F6-8406-D1EA881EF6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.IRepository", "Vitamedica.ProyectoAlam.IRepository\Vitamedica.ProyectoAlam.IRepository.csproj", "{CA6F39AF-CE2C-4C03-9A2C-7F677537117A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Domain", "Vitamedica.ProyectoAlam.Domain\Vitamedica.ProyectoAlam.Domain.csproj", "{4E91948E-8477-48E6-8B44-661ABF7E98F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.IDomain", "Vitamedica.ProyectoAlam.IDomain\Vitamedica.ProyectoAlam.IDomain.csproj", "{92548808-C98C-42CB-89B7-D0D21050F38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Service.Resource", "Vitamedica.ProyectoAlam.Service.Resource\Vitamedica.ProyectoAlam.Service.Resource.csproj", "{3D3F9063-06CA-4450-BAA8-FA2B740DC6AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.Resource", "Vitamedica.ProyectoAlam.Resource\Vitamedica.ProyectoAlam.Resource.csproj", "{C62E5D1B-52EE-4B8D-B108-C160B4BE1A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vitamedica.ProyectoAlam.UI", "Vitamedica.ProyectoAlam.UI\Vitamedica.ProyectoAlam.UI.csproj", "{2E7F1B76-24A4-4792-AD8D-DAEDBA93F65D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8D782D4-67A1-449A-949E-29ADAEE81888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D782D4-67A1-449A-949E-29ADAEE81888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D782D4-67A1-449A-949E-29ADAEE81888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D782D4-67A1-449A-949E-29ADAEE81888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62AD0572-EC25-43B4-825D-CCD7622E8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AD0572-EC25-43B4-825D-CCD7622E8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AD0572-EC25-43B4-825D-CCD7622E8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AD0572-EC25-43B4-825D-CCD7622E8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F8992B-F335-46B0-AE3D-E339A6204331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F8992B-F335-46B0-AE3D-E339A6204331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F8992B-F335-46B0-AE3D-E339A6204331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F8992B-F335-46B0-AE3D-E339A6204331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E15C5D8-67B0-4B84-995E-30635407D2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E15C5D8-67B0-4B84-995E-30635407D2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E15C5D8-67B0-4B84-995E-30635407D2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E15C5D8-67B0-4B84-995E-30635407D2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096201C4-2D8C-40F6-8406-D1EA881EF6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096201C4-2D8C-40F6-8406-D1EA881EF6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096201C4-2D8C-40F6-8406-D1EA881EF6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096201C4-2D8C-40F6-8406-D1EA881EF6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6F39AF-CE2C-4C03-9A2C-7F677537117A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6F39AF-CE2C-4C03-9A2C-7F677537117A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6F39AF-CE2C-4C03-9A2C-7F677537117A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6F39AF-CE2C-4C03-9A2C-7F677537117A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E91948E-8477-48E6-8B44-661ABF7E98F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E91948E-8477-48E6-8B44-661ABF7E98F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E91948E-8477-48E6-8B44-661ABF7E98F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E91948E-8477-48E6-8B44-661ABF7E98F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92548808-C98C-42CB-89B7-D0D21050F38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92548808-C98C-42CB-89B7-D0D21050F38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92548808-C98C-42CB-89B7-D0D21050F38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92548808-C98C-42CB-89B7-D0D21050F38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3F9063-06CA-4450-BAA8-FA2B740DC6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3F9063-06CA-4450-BAA8-FA2B740DC6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3F9063-06CA-4450-BAA8-FA2B740DC6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3F9063-06CA-4450-BAA8-FA2B740DC6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62E5D1B-52EE-4B8D-B108-C160B4BE1A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62E5D1B-52EE-4B8D-B108-C160B4BE1A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62E5D1B-52EE-4B8D-B108-C160B4BE1A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62E5D1B-52EE-4B8D-B108-C160B4BE1A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E7F1B76-24A4-4792-AD8D-DAEDBA93F65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7F1B76-24A4-4792-AD8D-DAEDBA93F65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7F1B76-24A4-4792-AD8D-DAEDBA93F65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7F1B76-24A4-4792-AD8D-DAEDBA93F65D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8D782D4-67A1-449A-949E-29ADAEE81888} = {E97D938E-231B-4433-88F0-3F532B6C7942}
+		{62AD0572-EC25-43B4-825D-CCD7622E8986} = {4531ED78-CE27-45AE-A543-A2FD91D42C22}
+		{30F8992B-F335-46B0-AE3D-E339A6204331} = {968B754A-E8D3-44B4-AA2D-F387B614219E}
+		{5E15C5D8-67B0-4B84-995E-30635407D2CA} = {968B754A-E8D3-44B4-AA2D-F387B614219E}
+		{096201C4-2D8C-40F6-8406-D1EA881EF6DA} = {65AD2086-FC0B-4D42-9652-E42D3B5586A0}
+		{CA6F39AF-CE2C-4C03-9A2C-7F677537117A} = {65AD2086-FC0B-4D42-9652-E42D3B5586A0}
+		{4E91948E-8477-48E6-8B44-661ABF7E98F7} = {7C545E82-77CB-4E88-BB03-E3A37C4D2F7D}
+		{92548808-C98C-42CB-89B7-D0D21050F38C} = {7C545E82-77CB-4E88-BB03-E3A37C4D2F7D}
+		{3D3F9063-06CA-4450-BAA8-FA2B740DC6AA} = {4531ED78-CE27-45AE-A543-A2FD91D42C22}
+		{C62E5D1B-52EE-4B8D-B108-C160B4BE1A95} = {094ECA03-DAE6-4A05-9AEC-690E0A72A794}
+		{2E7F1B76-24A4-4792-AD8D-DAEDBA93F65D} = {094ECA03-DAE6-4A05-9AEC-690E0A72A794}
+	EndGlobalSection
+EndGlobal

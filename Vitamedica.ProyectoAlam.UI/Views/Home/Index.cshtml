@@ -1,0 +1,401 @@
+﻿@using System.Web.Optimization
+@{
+    ViewBag.Title = "Experiencia Única";
+}
+<link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+<link href="~/fonts/fonts.css" rel="stylesheet" />
+@Scripts.Render("~/bundles/jSweetAlert")
+<style>
+    div.Sel1 {
+        color: #004481 !important;
+    }
+
+    div.Sel2 {
+        color: #2980b9 !important;
+    }
+
+    h2.SubTitulo {
+        color: #004481 !important;
+    }
+
+    strong.Titulo {
+        color: #2980b9 !important;
+    }
+
+    a.Filtro {
+        color: #2980b9 !important;
+    }
+
+    p.Pregunta {
+        color: #004481 !important;
+        font-size: 19px !important;
+    }
+
+    li.Pregunta {
+        color: #004481 !important;
+        font-size: 19px !important;
+    }
+
+    p.Criterio {
+        color: #2980b9 !important;
+        font-size: 16px !important;
+        white-space: break-spaces !important;
+    }
+
+    label.Comentario {
+        color: #004481 !important;
+        font-size: 19px !important;
+    }
+
+    textarea.Comentario {
+        color: #2980b9 !important;
+        font-size: 16px !important;
+    }
+
+    span.ir-arriba {
+        display: none;
+        padding: 15px;
+        background: #0c7ce6;
+        font-size: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+</style>
+<div class="form-horizontal content" id="pdf">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="header">
+                        <h2 class="SubTitulo"><strong class="Titulo">Experiencia Única</strong> Histórico de Encuestas</h2>
+                    </div>
+                    <div class="body">
+                        <span class="ir-arriba icon-ctrl"></span>
+                        <div class="panel-group" id="accordion_1" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" role="tab" id="headingOne_1">
+                                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseOne_1" aria-expanded="true" aria-controls="collapseOne_1" class="Filtro"> Parámetros </a> </h4>
+                                </div>
+                                <div id="collapseOne_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_1">
+                                    <div class="panel-body">
+                                        <div class="form-horizontal row">
+                                            <div class="col-md-10  col-xs-12">
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-2 col-md-2 col-sm-3 form-control-label Sel1">
+                                                        @*@Html.LabelFor(m => m.Area)*@
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-12 col-md-4">
+                                                        <div class="form-group Sel2">
+                                                            @*@Html.DropDownListFor(m => m.Area, new SelectList(ViewBag.Area, "Id", "Area"), "Seleccionar Área", new { @class = "form-control show-tick", required = "required" })
+                                                            @Html.ValidationMessageFor(model => model.Area, "", new { @class = "text-danger" })*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-2 col-md-2 col-sm-3 form-control-label Sel1">
+                                                        @*@Html.LabelFor(m => m.Puesto)*@
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-12 col-md-4">
+                                                        <div class="form-group Sel2">
+                                                            @*@Html.DropDownListFor(m => m.Puesto, new SelectList(ViewBag.Puesto, "Id", "Puesto"), "Seleccionar Puesto", new { @class = "form-control show-tick", required = "required" })
+                                                            @Html.ValidationMessageFor(model => model.Puesto, "", new { @class = "text-danger" })*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-2 col-md-2 col-sm-3 form-control-label Sel1">
+                                                        @*@Html.LabelFor(m => m.Empleado)*@
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-12 col-md-4">
+                                                        <div class="form-group Sel2">
+                                                            @*@Html.DropDownListFor(m => m.Empleado, new List<SelectListItem>(ViewBag.Empleado), "Seleccionar Empleado", new { @class = "form-control show-tick" })
+                                                            @Html.ValidationMessageFor(model => model.Empleado, "", new { @class = "text-danger" })*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-2 col-md-2 col-sm-3 form-control-label Sel1">
+                                                        @*@Html.LabelFor(m => m.Fecha)*@
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-12 col-md-4">
+                                                        <div class="form-group Sel2">
+                                                            <label class="Sel1">Fecha inicio</label>
+                                                            <input type="date" id="dFechaInicio" class="form-control show-tick dtp-date-view" />
+                                                        </div>
+                                                        <div class="form-group Sel2">
+                                                            <label class="Sel1">Fecha fin</label>
+                                                            <input type="date" id="dFechaFin" class="form-control show-tick dtp-date-view" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-horizontal row">
+                                            <div class="col-md-10  col-xs-12">
+                                                <button class="btn btn-primary btn-lg btn-block" onclick="fnBuscaHistorico()">Buscar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="header">
+                        <h2><strong class="Titulo">Historico de encuestas</strong></h2>
+                    </div>
+                    <div class="body">
+                        <div id="dvBtnDescarga" style="text-align: right;">
+                            <button class="btn btn-success" onclick="fnExportarHistorico()">Exportar a Excel</button>
+                        </div>
+                        <div id="dvHistoricoEncuesta">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.ir-arriba').click(function () {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+    });
+
+    @*var urlObtenerListaCatalogoPuesto = '@Url.Content("~/ExperienciaUnica/ObtenerListaCatalogoPuesto")';
+    var urlObtenerListaCatalogoEmpleado = '@Url.Content("~/ExperienciaUnica/ObtenerListaCatalogoEmpleado")';
+    var urlObtenerListaEncuesta = '@Url.Content("~/ExperienciaUnica/ObtenerListaEncuesta")';
+    var urlListaHistoricoEncuestas = '@Url.Content("~/ExperienciaUnica/ListaHistoricoEncuestas")';
+    var urlExportarHistorico = '@Url.Content("~/ExperienciaUnica/ExportarHistorico")';
+    var urlDescargaExcel = '@Url.Content("~/ExperienciaUnica/DescargaExcel")';
+
+    $('#dvBtnDescarga').hide();
+    $('.collapse').collapse("show");
+    $('#Area').on('change', function () {
+        if ($("#Area option:selected").val() != "") {
+            $.ajax({
+                data: { "IdArea": $("#Area option:selected").val() },
+                type: "POST",
+                dataType: "json",
+                url: urlObtenerListaCatalogoPuesto,
+            }).done(function (data, textStatus, jqXHR) {
+                $("#Puesto").empty();
+                $("#Puesto").append("<option value> Seleccionar Puesto - (" + $("#Area option:selected").text() + ")" + "</option>")
+                for (var i = 0; i < data.length; i++) {
+                    $('#Puesto')
+                        .append($("<option></option>")
+                        .attr("value", data[i].Puesto)
+                        .text(data[i].Puesto));
+                }
+                $('#Puesto').selectpicker('refresh');
+                $("#Empleado").empty();
+                $("#Empleado").append("<option value> Seleccionar Empleado</option>");
+                $('#Empleado').selectpicker('refresh');
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+            });
+        }
+        else {
+            $("#Puesto").empty();
+            $("#Puesto").append("<option value> Seleccionar Puesto</option>");
+            $('#Puesto').selectpicker('refresh');
+
+            $("#Empleado").empty();
+            $("#Empleado").append("<option value> Seleccionar Empleado</option>");
+            $('#Empleado').selectpicker('refresh');
+        }
+    });
+    $('#Puesto').on('change', function () {
+        if ($("#Puesto option:selected").val() != "") {
+            $.ajax({
+                data: { "Puesto": $("#Puesto option:selected").val() },
+                type: "POST",
+                dataType: "json",
+                url: urlObtenerListaCatalogoEmpleado,
+            }).done(function (data, textStatus, jqXHR) {
+                $("#Empleado").empty();
+                $("#Empleado").append("<option value> Seleccionar Empleado - (" + $("#Puesto option:selected").text() + ")" + "</option>")
+                for (var i = 0; i < data.length; i++) {
+                    $('#Empleado')
+                        .append($("<option></option>")
+                        .attr("value", data[i].Empleado)
+                        .text(data[i].Empleado));
+                }
+                $('#Empleado').selectpicker('refresh');
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+            });
+        }
+        else {
+            $("#Empleado").empty();
+            $("#Empleado").append("<option value> Seleccionar Empleado</option>");
+            $('#Empleado').selectpicker('refresh');
+        }
+    });
+    $('#Empleado').on('change', function () {
+        if ($("#Puesto option:selected").val() != "") {
+            $.ajax({
+                data: { "Puesto": $("#Puesto option:selected").val() },
+                type: "POST",
+                dataType: "json",
+                url: urlObtenerListaEncuesta,
+            }).done(function (data, textStatus, jqXHR) {
+
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+            });
+        }
+        else {
+
+        }
+    });
+    $('#dFechaFin').on('change', function () {
+        var fechaInicio = $('#dFechaInicio').val();
+        var fechaFin = $('#dFechaFin').val();
+
+        if (fechaInicio >= fechaFin) {
+            swal({
+                title: "¡Importante!",
+                text: "La fecha inicio no puede ser mayor o igual a la fecha fin.",
+                icon: "warning",
+            });
+            $('#dFechaFin').val("");
+            $('#dFechaInicio').val("");
+        }
+    });
+
+    function fnBuscaHistorico() {
+        var fechaInicio = $('#dFechaInicio').val();
+        var fechaFin = $('#dFechaFin').val();
+        var area = $("#Area").val();
+        var puesto = $("#Puesto").val();
+
+        if (fechaInicio.length > 0 && fechaFin.length == 0 && fechaInicio >= fechaFin) {
+            swal({
+                title: "¡Importante!",
+                text: "La fecha inicio no puede ser mayor o igual a la fecha fin.",
+                icon: "warning",
+            });
+            $('#dFechaFin').val("");
+            $('#dFechaInicio').val("");
+        }else if (fechaInicio.length > 0 && fechaFin.length == 0) {
+            swal({
+                title: "¡Importante!",
+                text: "Si ingresas la fecha inicio debe ingresar una fecha fin.",
+                icon: "warning",
+            });
+            $('#dFechaFin').val("");
+            $('#dFechaInicio').val("");
+        } else if (fechaInicio.length == 0 && fechaFin.length > 0) {
+            swal({
+                title: "¡Importante!",
+                text: "Si ingresas la fecha fin debe ingresar una fecha inicio.",
+                icon: "warning",
+            });
+            $('#dFechaFin').val("");
+            $('#dFechaInicio').val("");
+        }else if (area.length == 0 || puesto.length == 0){
+            swal({
+                title: "¡Importante!",
+                text: "Debes seleccionar Área y Puesto.",
+                icon: "warning",
+            });
+        }else {
+            var encuestador = $("#leftsidebar > div.menu > div > ul > li:nth-child(1) > div > div.detail > h4").text();
+            var area = $("#Area").val();
+            var puesto = $("#Puesto").val();
+            var empleado = $("#Empleado").val();
+
+            var fI = $("#dFechaInicio").val();
+            var fF = $("#dFechaFin").val();
+
+            if (fI.length > 0 || fF.length > 0) {
+                var fINueva = fI.split(" ")[0];
+                var fIFormato = fINueva.split("-");
+                var fechaInicio = fIFormato[2] + '/' + fIFormato[1] + '/' + fIFormato[0]
+
+                var fFNueva = fF.split(" ")[0];
+                var fFFormato = fFNueva.split("-");
+                var fechaFin = fFFormato[2] + '/' + fFFormato[1] + '/' + fFFormato[0]
+            }
+
+            var model = new FormData();
+            model.append("Encuestador", encuestador);
+            model.append("Area", area);
+            model.append("Puesto", puesto);
+            model.append("Empleado", empleado);
+            model.append("FechaInicio", fechaInicio);
+            model.append("FechaFin", fechaFin);
+
+            $.ajax({
+                url: urlListaHistoricoEncuestas,
+                contentType: false,
+                processData: false,
+                type: 'POST',
+                data: model,
+                success: function (data) {
+                    $("#dvLoadingBullet").empty();
+                    $("#dvHistoricoEncuesta").html(data);
+                    $('#dvBtnDescarga').show();
+                },
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                $("#dvLoadingBullet").empty();
+                swal({ icon: 'error', title: 'Error Interno', text: "Codigo: " + jqXHR.status + " Descripcion: " + errorThrown })
+            });
+        }
+    }
+    function fnExportarHistorico() {
+        var fechaInicio = $('#dFechaInicio').val();
+        var fechaFin = $('#dFechaFin').val();
+        var encuestador = $("#leftsidebar > div.menu > div > ul > li:nth-child(1) > div > div.detail > h4").text();
+        var area = $("#Area").val();
+        var puesto = $("#Puesto").val();
+        var empleado = $("#Empleado").val();
+
+        var model = new FormData();
+        model.append("Encuestador", encuestador);
+        model.append("Area", area);
+        model.append("Puesto", puesto);
+        model.append("Empleado", empleado);
+        model.append("FechaInicio", fechaInicio);
+        model.append("FechaFin", fechaFin);
+
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: urlExportarHistorico,
+            contentType: false,
+            processData: false,
+            data: model,
+            error: function (xmlHttpRequest, textStatus, errorThrown) {
+                swal({ icon: "warning", title: "¡Importante!", text: errorThrown });
+                $("#dvLoadingBullet").modal('hide');
+            },
+            success: function (json) {
+                if (json.success) {
+                    window.location = urlDescargaExcel + '?fileGuid=' + json.data + '&filename=EU_' + json.Area + '_Reporte.xlsx';
+                }
+                else {
+                    swal({ icon: 'error', title: 'Ocurrió un error', text: json.message });
+                }
+                $('#dvLoadingBullet').modal('hide');
+            }
+        });
+    }*@
+</script>
